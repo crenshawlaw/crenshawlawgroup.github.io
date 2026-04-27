@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Crenshaw Law Group</title>
+  <meta name="description" content="Contact Crenshaw Law Group regarding contract enforcement, collections, business disputes, royalty recovery, and business law matters.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-navy">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Crenshaw Law Group</a>
+    <a class="navbar-brand" href="index.html">Crenshaw Law Group</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,7 +22,8 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link active nav-button" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -29,53 +31,54 @@
 
 <section class="page-hero">
   <div class="container">
-    <h1>Contact the Firm</h1>
-    <p>Submit an inquiry regarding contract enforcement, collections, payment disputes, royalty recovery, or business law matters.</p>
+    <p class="eyebrow">Contact</p>
+    <h1>Discuss your business legal matter.</h1>
+    <p>Submit an inquiry regarding contract enforcement, collections, payment disputes, royalty recovery, license enforcement, or business law concerns.</p>
   </div>
 </section>
 
-<section class="section-navy no-separator">
+<section class="section-premium">
   <div class="container">
     <div class="row g-5">
 
-      <div class="col-md-5">
-        <h2>Contact Information</h2>
-        <p><strong>Hours:</strong><br>Monday–Friday, 9AM–6PM</p>
-        <p><strong>Email:</strong><br>
-          <a href="mailto:legal@crenshawlawgroup.com" class="contact-link">legal@crenshawlawgroup.com</a>
-        </p>
-        <p><strong>Address:</strong><br>
-          123 North Wacker Drive<br>
-          Suite 2400<br>
-          Chicago, IL 60606<br>
-          <a href="https://www.google.com/maps/place/123+N+Wacker+Dr+Suite+2400,+Chicago,+IL+60606" target="_blank" class="contact-link">View on Google Maps</a>
-        </p>
-        <img src="images/detail.jpg" class="img-fluid shadow mt-4" alt="Gavel and legal office">
+      <div class="col-lg-5">
+        <div class="contact-panel">
+          <h2>Contact Information</h2>
+
+          <p><strong>Hours</strong><br>Monday–Friday<br>9:00 AM–6:00 PM</p>
+
+          <p><strong>Email</strong><br>
+            <a href="mailto:legal@crenshawlawgroup.com" class="contact-link">legal@crenshawlawgroup.com</a>
+          </p>
+
+          <p><strong>Address</strong><br>
+            123 North Wacker Drive<br>
+            Suite 2400<br>
+            Chicago, IL 60606<br>
+            <a href="https://www.google.com/maps/place/123+N+Wacker+Dr+Suite+2400,+Chicago,+IL+60606" target="_blank" class="contact-link">View on Google Maps</a>
+          </p>
+
+          <img src="images/detail.jpg" class="premium-image mt-4" alt="Gavel and legal office">
+        </div>
       </div>
 
-      <div class="col-md-7">
-        <form action="https://formspree.io/f/mgvnwavy" method="POST" class="contact-form p-4 shadow">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
-          </div>
+      <div class="col-lg-7">
+        <form action="https://formspree.io/f/mgvnwavy" method="POST" class="contact-form">
+          <h2>Send an Inquiry</h2>
 
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
-          </div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-          <div class="mb-3">
-            <label for="number" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" id="number" name="number" placeholder="Optional">
-          </div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-          <div class="mb-3">
-            <label for="message" class="form-label">Inquiry Message</label>
-            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Briefly describe your matter" required></textarea>
-          </div>
+          <label for="number">Phone Number</label>
+          <input type="text" id="number" name="number" placeholder="Optional">
 
-          <button type="submit" class="btn w-100">Submit Inquiry</button>
+          <label for="message">Inquiry Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Briefly describe your matter" required></textarea>
+
+          <button type="submit">Submit Inquiry</button>
         </form>
       </div>
 
@@ -83,8 +86,10 @@
   </div>
 </section>
 
-<footer class="text-white text-center py-4">
-  <p class="mb-0">&copy; 2026 Crenshaw Law Group. All rights reserved.</p>
+<footer class="footer">
+  <div class="container text-center">
+    <p>&copy; 2026 Crenshaw Law Group. All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
