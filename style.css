@@ -5,10 +5,17 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'Inter', sans-serif;
   background: #ffffff;
-  color: #222;
+  color: #1f1f1f;
   line-height: 1.7;
+}
+
+/* ===== Typography ===== */
+
+h1, h2, h3, h4, nav a, nav strong, .faq-question {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
 }
 
 .container {
@@ -17,7 +24,7 @@ body {
   margin: auto;
 }
 
-/* ================= NAV ================= */
+/* ===== Navigation ===== */
 
 nav {
   position: fixed;
@@ -36,7 +43,6 @@ nav {
 
 nav strong {
   color: #ffffff;
-  font-family: 'Playfair Display', serif;
   font-size: 20px;
 }
 
@@ -51,7 +57,7 @@ nav a:hover {
   color: #d4af37;
 }
 
-/* ================= HERO ================= */
+/* ===== Hero ===== */
 
 .hero {
   height: 100vh;
@@ -65,7 +71,6 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 52px;
   margin-bottom: 20px;
 }
@@ -73,6 +78,7 @@ nav a:hover {
 .hero p {
   max-width: 650px;
   margin-bottom: 30px;
+  font-family: 'Inter', sans-serif;
 }
 
 .btn-gold {
@@ -88,14 +94,13 @@ nav a:hover {
   background: #c19d2c;
 }
 
-/* ================= SECTIONS ================= */
+/* ===== Sections ===== */
 
 section {
-  padding: 90px 0;
+  padding: 100px 0;
 }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
   font-size: 38px;
   margin-bottom: 20px;
 }
@@ -104,9 +109,10 @@ section {
   max-width: 700px;
   margin-bottom: 50px;
   color: #555;
+  font-family: 'Inter', sans-serif;
 }
 
-/* ================= GRID ================= */
+/* ===== Grid ===== */
 
 .grid-3 {
   display: grid;
@@ -134,31 +140,18 @@ section {
   color: #555;
 }
 
-/* ================= DARK BAND ================= */
-
-.band-dark {
-  background: #0e1a2b;
-  color: white;
-  text-align: center;
-}
-
-.band-dark h2 {
-  font-family: 'Playfair Display', serif;
-}
-
-/* ================= PAGE HERO ================= */
+/* ===== Page Hero ===== */
 
 .page-hero {
-  padding: 160px 0 60px;
+  padding: 160px 0 70px;
   background: #f4f6f9;
 }
 
 .page-hero h1 {
-  font-family: 'Playfair Display', serif;
   font-size: 44px;
 }
 
-/* ================= FAQ ================= */
+/* ===== FAQ ===== */
 
 .faq-item {
   border-bottom: 1px solid #ddd;
@@ -168,9 +161,9 @@ section {
   width: 100%;
   background: none;
   border: none;
-  padding: 20px 0;
+  padding: 22px 0;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   cursor: pointer;
 }
@@ -179,15 +172,28 @@ section {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
+  font-family: 'Inter', sans-serif;
   color: #555;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 600px;
+  max-height: 800px;
   padding-bottom: 20px;
 }
 
-/* ================= FOOTER ================= */
+/* ===== Dark Band ===== */
+
+.band-dark {
+  background: #0e1a2b;
+  color: white;
+  text-align: center;
+}
+
+.band-dark h2 {
+  font-size: 32px;
+}
+
+/* ===== Footer ===== */
 
 footer {
   background: #0e1a2b;
@@ -197,13 +203,12 @@ footer {
   font-size: 14px;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ===== Responsive ===== */
 
 @media(max-width: 900px){
   .grid-3 {
     grid-template-columns: 1fr;
   }
-
   .hero h1 {
     font-size: 36px;
   }
