@@ -1,62 +1,67 @@
-/* KEEP EVERYTHING YOU ALREADY HAVE ABOVE */
-/* THEN ADD / REPLACE WITH THIS SECTION AT THE BOTTOM */
+/* ========================= */
+/* INTERACTIVE FAQ STYLING  */
+/* ========================= */
 
-/* ===================== */
-/* FAQ PREMIUM FIX */
-/* ===================== */
+.faq-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #07111f, #0b1830);
+}
 
 .faq-container {
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
-/* Section headings (Contract Enforcement, etc.) */
 .faq-container h2 {
-  font-size: 2.4rem;
-  color: var(--gold-light);
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #e4c987;
   border-bottom: 1px solid rgba(255,255,255,0.15);
   padding-bottom: 0.5rem;
 }
 
-/* First heading spacing fix */
-.faq-container h2:first-child {
-  margin-top: 0;
-}
-
-/* Individual FAQ blocks */
 .faq-item {
-  padding: 1.8rem 2rem;
-  margin-bottom: 1.5rem;
-  border-left: 3px solid var(--gold);
-  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
-  transition: 0.25s ease;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Hover effect */
-.faq-item:hover {
-  transform: translateY(-4px);
-  border-left: 3px solid var(--gold-light);
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 1rem 0;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
 }
 
-/* Question */
-.faq-item h3 {
-  font-size: 1.25rem;
-  color: var(--white);
-  margin-bottom: 0.6rem;
-  line-height: 1.4;
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 1.4rem;
+  transition: 0.3s;
 }
 
-/* Answer */
-.faq-item p {
-  font-size: 1rem;
+.faq-item.active .faq-question::after {
+  content: "−";
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  padding: 0.5rem 0 1rem 0;
   color: #cfd8e6;
-  line-height: 1.7;
-  margin: 0;
 }
 
-/* Add spacing between sections visually */
-.faq-container h2 + .faq-item {
-  margin-top: 1rem;
+.faq-item.active .faq-answer {
+  max-height: 300px;
 }
