@@ -1,61 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact | Crenshaw Law Group</title>
-  <link href="style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather&display=swap" rel="stylesheet">
+<title>Contact | Crenshaw Law Group</title>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav>
-  <div class="container nav-inner">
-    <div><strong>Crenshaw Law Group</strong></div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+<div class="container nav-inner">
+<div><strong>Crenshaw Law Group</strong></div>
+<div>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
 </nav>
 
 <section class="page-hero">
-  <div class="container">
-    <h1>Discuss Your Business Matter</h1>
-  </div>
+<div class="container">
+<h1>Discuss Your Matter</h1>
+</div>
 </section>
 
 <section>
-  <div class="container contact-grid">
+<div class="container" style="max-width:600px;">
 
-    <div>
-      <h2 class="section-title">Contact Information</h2>
-      <p><strong>Hours:</strong><br>Monday – Friday<br>9:00 AM – 6:00 PM</p>
-      <p><strong>Email:</strong><br>legal@crenshawlawgroup.com</p>
-      <p><strong>Address:</strong><br>
-      123 North Wacker Drive<br>
-      Suite 2400<br>
-      Chicago, IL 60606</p>
-    </div>
+<form action="https://formspree.io/f/mgvnwavy" method="POST">
+<input type="text" name="name" placeholder="Full Name" required style="width:100%;padding:12px;margin-bottom:15px;">
+<input type="email" name="email" placeholder="Email Address" required style="width:100%;padding:12px;margin-bottom:15px;">
+<input type="text" name="phone" placeholder="Phone Number" style="width:100%;padding:12px;margin-bottom:15px;">
+<textarea name="message" rows="6" placeholder="Describe your matter" required style="width:100%;padding:12px;margin-bottom:15px;"></textarea>
+<button type="submit" class="btn-gold" style="width:100%;">Submit Inquiry</button>
+</form>
 
-    <div>
-      <h2 class="section-title">Send an Inquiry</h2>
-      <form action="https://formspree.io/f/mgvnwavy" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="text" name="phone" placeholder="Phone Number">
-        <textarea name="message" rows="5" placeholder="Describe your matter" required></textarea>
-        <button type="submit">Submit Inquiry</button>
-      </form>
-    </div>
+<p style="margin-top:40px;">
+<strong>Address:</strong><br>
+123 North Wacker Drive, Suite 2400<br>
+Chicago, IL 60606<br><br>
+<strong>Email:</strong> legal@crenshawlawgroup.com<br>
+<strong>Hours:</strong> Mon–Fri 9AM–6PM
+</p>
 
-  </div>
+</div>
 </section>
 
-<footer>
-  © 2026 Crenshaw Law Group | Chicago, Illinois
-</footer>
+<footer>© 2026 Crenshaw Law Group | Chicago, Illinois</footer>
 
 </body>
 </html>
